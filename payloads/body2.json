@@ -1,0 +1,69 @@
+{
+  "source_customer_id": "CC_1654E8053",
+  "name": "Maple Street Outdoor Supply LLC",
+  "eaid": "BSFJ1217",
+  "products": [
+    {
+      "source_item_id": "9f3c2b6e8a414d2f9c7b5e1a8d4f2c9a", 
+      "sku": "SKU-YPO",
+      "origin_location_code": "TMC",
+      "origin_location_id": "LOC1DC841453",
+      "listing_type": "platinum",
+      "content": [
+        {
+          "loyalty_date": "2026-02-06",
+          "override_business_phone": "true",
+          "business_phone": "5097217180",
+          "source_headings": [
+            {
+              "heading_source": "intl_tax_us",
+              "data": [
+                {
+                  "type": "intl_tax_us",
+                  "code": "8004206",
+                  "category": "Coffee Shop",
+                  "description": "",
+                  "is_primary": false
+                }
+              ]
+            }
+          ],
+          "distributions": [
+            {
+              "distribution_type": "yelp",
+              "distribution_attributes": {
+                "profile_type": "branded",
+                "opt_in": true,
+                "ctn": "8337830268"
+              }
+            },
+            {
+              "distribution_type": "nextdoor",
+              "distribution_attributes": {
+                "opt_in": true,
+                "ctn": "5097217180"
+              }
+            }
+          ]
+        },
+        {
+          "source_geography": [
+            {
+              "geo_source": "YPO",
+              "data": [
+                {
+                  "geo_group": "YPO",
+                  "geo_type": "zip_code",
+                  "geo_code": "33133",
+                  "description": "Valid Zip Code"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "saas_sku": "Free Trial"
+    }
+  ],
+  "hipaa_customer": false
+}

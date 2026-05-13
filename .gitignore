@@ -1,0 +1,27 @@
+# Environment variables
+.env
+
+# MDM local working directory
+MDM/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Shell history
+.history
+
+# Python cache
+__pycache__/
+
+# Backup files
+*.bak

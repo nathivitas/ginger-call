@@ -1,0 +1,18 @@
+BODY="$(cat body.json)"
+
+RID="TEST_$(python3 -c 'import time; print(int(time.time()*1000))')"
+
+MSG="appCode=${APP_CODE}&requestId=${RID}&myBody=${BODY}"
+
+GPA_KEY="$(printf '%s' "$MSG" | tr -d '\t\n\r ' \
+  | openssl dgst -sha256 -hmac "$SECRET_KEY" \
+  | awk '{print $2}')"
+
+curl -v "http://${GINGER_HOST}:${GINGER_PORT}/gpa/${APP_CODE}/customers/${CID}" \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -H "app: ${APP}" \
+  -H "rid: ${RID}" \
+  -H "gpa-key: ${GPA_KEY}" \
+  -H "gpa_version: v1.20" \
+  --data-binary @body2.json

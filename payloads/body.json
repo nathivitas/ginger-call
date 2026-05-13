@@ -1,0 +1,50 @@
+{
+  "source_customer_id": "CC_16",
+  "name": "Check City",
+  "eaid": "BSFH4746",
+  "products": [
+    {
+      "source_item_id": "test_16",
+      "sku": "SKU-YPO",
+      "origin_location_code": "FRE",
+      "origin_location_id": "F10495",
+      "listing_type": "activate",
+      "content": [
+        {
+          "loyalty_date": "2021-12-03",
+          "override_business_phone": "false",
+          "source_headings": [
+            {
+              "heading_source": "intl_tax_us",
+              "data": [
+                {
+                  "code": "8001721",
+                  "category": "Investments",
+                  "type": "intl_tax_us"
+                }
+              ]
+            }
+          ],
+          "distributions": []
+        },
+        {
+          "source_geography": [
+            {
+              "geo_source": "YPO",
+              "data": [
+                {
+                  "geo_group": "YPO",
+                  "geo_type": "zip_code",
+                  "geo_code": "89103",
+                  "description": "Valid Zip Code"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "saas_sku": "Marketing Services"
+    }
+  ],
+  "hipaa_customer": true
+}
